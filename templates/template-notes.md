@@ -29,17 +29,28 @@ commitoi muutos.
 
 ---
 
+## Dia-jaottelu (mallidiat sisältötyypeittäin)
+
+> **Tämä on ainoa paikka, jossa dianumerot ylläpidetään.** Muut ohjeet (esim.
+> `CLAUDE.md`) viittaavat tähän — älä kopioi numeroita muualle.
+
+| Sisältötyyppi     | Käytä diaa           |
+|-------------------|----------------------|
+| Esityksen aloitus | diat 1–3 (cover)     |
+| Osion vaihtuminen | diat 4–6 (section)   |
+| Sisältö           | diat 7–9 (content)   |
+| Päätös / kiitos   | diat 10–13 (closing) |
+
+---
+
 ## Käyttö Claudelle
 
 Kun rakennat esitystä, toimi näin:
 
 1. Lue pohjan rakenne: `python /mnt/skills/public/pptx/scripts/thumbnail.py templates/template.pptx thumbs`
-2. Käytä dioja 1–3 kansilehtinä
-3. Käytä dioja 4-6 välisivuina
-4. Käytä dioja 7–9 sisältösivuina
-5. Käytä dioja 10–13 lopetussivuina
-4. Älä poista: logo-shape, footer-shape, sivunumero-placeholder
-5. Pakkaa takaisin ja validoi:
+2. Valitse mallidiat yllä olevan **Dia-jaottelu**-taulukon mukaan
+3. Älä poista: logo-shape, footer-shape, sivunumero-placeholder
+4. Pakkaa takaisin ja validoi:
 ```bash
 cd unpacked && rm -f ../output.pptx && zip -Xr ../output.pptx .
 python /mnt/skills/public/pptx/scripts/office/validate.py output.pptx --original ../templates/template.pptx
