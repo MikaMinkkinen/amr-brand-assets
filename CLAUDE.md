@@ -18,20 +18,18 @@ Käyttäjä kertoo sisällön — sinä hoidat kaiken muun.
 1. Lue `colors/brand-colors.json` — AMR:n ja mediabrändienn värit
 2. Lue `fonts/fonts.json` — Archivo-fonttiperhe ja koot
 3. Lue `guidelines/layout.md` — dia-tyypit ja marginaalit
-4. Lue `templates/template-notes.md` — SharePoint-polku ja mallidiat
+4. Lue `templates/template-notes.md` — pohjan sijainti ja mallidiat
 
 ---
 
 ## PowerPoint-esityksen rakentaminen
 
-### Vaihe 1: Hae pohja SharePointista
+### Vaihe 1: Käytä repon pohjaa
 ```
-Microsoft 365 sharepoint_search:
-  query: "template.pptx"
-  folderName: "ai-assets"
-  fileType: "pptx"
-→ read_resource URI joka palautuu
+templates/template.pptx
 ```
+Pohja on osa repoa (Git LFS). Käytä aina tätä tiedostoa — älä hae pohjaa
+muualta äläkä lataa sitä internetistä.
 
 ### Vaihe 2: Valitse oikeat mallidiat sisällön perusteella
 
@@ -122,7 +120,7 @@ logos/brands/        ← mediabrändit (iltalehti, kauppalehti jne.)
 
 ## Muistilista ennen toimittamista
 
-- [ ] Pohja haettu SharePointista (ei vanha paikallinen kopio)
+- [ ] Pohja: `templates/template.pptx` (repon versio)
 - [ ] Oikeat mallidiat valittu sisällön perusteella
 - [ ] Värit vastaavat `brand-colors.json`-arvoja
 - [ ] Otsikot VERSAALILLA
@@ -135,5 +133,5 @@ logos/brands/        ← mediabrändit (iltalehti, kauppalehti jne.)
 ## Jos jokin puuttuu
 
 - **Logo puuttuu kansiosta** → mainitse käyttäjälle, älä arvaile
-- **Pohja ei löydy SharePointista** → pyydä käyttäjää antamaan linkki
+- **Pohja puuttuu `templates/`-kansiosta** → pyydä käyttäjää lisäämään `template.pptx`
 - **Epäselvä sisältö** → kysy yksi tarkentava kysymys ennen rakentamista

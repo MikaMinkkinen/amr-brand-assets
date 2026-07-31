@@ -1,21 +1,21 @@
 # AMR PowerPoint-pohjan käyttöohjeet
 
-> **Claudelle:** Pohja ei ole tässä repossa — se haetaan aina SharePointista.
+> **Claudelle:** Pohja on osa repoa. Käytä aina repon tiedostoa.
 
 ---
 
 ## Pohjan sijainti
 
-**SharePoint:** `AMRDike / Shared Documents / Tuote / ai-assets / templates / template.pptx`
+**Repo:** `templates/template.pptx` (tallennettu Git LFS:llä)
 
-Hae pohja Microsoft 365 SharePoint -yhteydellä näin:
-```
-sharepoint_search(query="template AMR pohja", folderName="AMRDike", fileType="pptx")
-→ valitse tiedosto nimeltä "template.pptx"
-→ lue sisältö: read_resource(uri="file:///...")
+Käytä pohjaa suoraan repon tiedostosta:
+```bash
+python /mnt/skills/public/pptx/scripts/thumbnail.py templates/template.pptx thumbs
 ```
 
-Pohja päivittyy säännöllisesti — käytä aina SharePointin uusinta versiota, älä tallenna paikallista kopiota pitkäksi aikaa.
+Älä hae pohjaa muualta äläkä lataa sitä internetistä. Jos pohja on
+päivitettävä, korvaa repon `templates/template.pptx` uudella versiolla ja
+commitoi muutos.
 
 ---
 
@@ -31,15 +31,15 @@ Pohja päivittyy säännöllisesti — käytä aina SharePointin uusinta versiot
 
 ## Käyttö Claudelle
 
-Kun käyttäjä antaa pohjan (`*.pptx`), toimi näin:
+Kun rakennat esitystä, toimi näin:
 
-1. Lue pohjan rakenne: `python /mnt/skills/public/pptx/scripts/thumbnail.py pohja.pptx thumbs`
+1. Lue pohjan rakenne: `python /mnt/skills/public/pptx/scripts/thumbnail.py templates/template.pptx thumbs`
 2. Käytä dioja 11–45 sisältöpohjina — diat 1–10 ovat ohjesivuja
 3. Älä poista: logo-shape, footer-shape, sivunumero-placeholder
 4. Pakkaa takaisin ja validoi:
 ```bash
 cd unpacked && rm -f ../output.pptx && zip -Xr ../output.pptx .
-python /mnt/skills/public/pptx/scripts/office/validate.py output.pptx --original pohja.pptx
+python /mnt/skills/public/pptx/scripts/office/validate.py output.pptx --original ../templates/template.pptx
 ```
 
 ---

@@ -1,9 +1,11 @@
+# Git LFS — suuret binääritiedostot erilliseen varastoon
+*.pptx filter=lfs diff=lfs merge=lfs -text
+*.potx filter=lfs diff=lfs merge=lfs -text
 # Tekstimuotoiset tiedostot — normalisoi rivinvaihdot
 *.svg  text eol=lf
 *.md   text eol=lf
 *.json text eol=lf
 *.yml  text eol=lf
-
 # Binäärit — ei rivinvaihtonormalisointia
 *.png  binary
 *.jpg  binary

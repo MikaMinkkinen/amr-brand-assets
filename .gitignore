@@ -11,13 +11,14 @@ ehthumbs.db
 Desktop.ini
 
 # Tilapäiset Office-tiedostot (avoimena oleva tiedosto luo ~$-kopion)
-~$*.pptx
 ~$*.docx
 ~$*.xlsx
 
-# PowerPoint-pohjat (ylläpidetään SharePointissa, ei versionhallinnassa)
+# PowerPoint-pohja on osa repoa: templates/template.pptx (Git LFS).
+# Muut .pptx/.potx (generoidut esitykset) eivät kuulu versionhallintaan.
 *.pptx
 *.potx
+!templates/template.pptx
 
 # Zip-paketit (generoidaan tarvittaessa, ei versionhallintaan)
 *.zip
