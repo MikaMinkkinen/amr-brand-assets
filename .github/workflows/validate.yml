@@ -23,12 +23,11 @@ jobs:
             "README.md" \
             "colors/brand-colors.json" \
             "fonts/fonts.json" \
-            "logos/logo-primary.png" \
-            "logos/logo-white.png" \
+            "logos/alma/logo-primary.png" \
+            "logos/alma/logo-white.png" \
             "guidelines/typography.md" \
             "guidelines/layout.md" \
             "guidelines/tone.md" \
-            "templates/template.pptx" \
             "templates/template-notes.md"; do
             if [ ! -f "$f" ]; then
               echo "❌ Puuttuu: $f"
