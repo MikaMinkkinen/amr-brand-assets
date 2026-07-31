@@ -55,10 +55,10 @@ jobs:
 
       - name: Check logo file sizes
         run: |
-          for f in logos/logo-primary.png logos/logo-white.png; do
+          for f in $(find logos -name "*.png"); do
             SIZE=$(wc -c < "$f")
             if [ "$SIZE" -lt 100 ]; then
-              echo "⚠️  VAROITUS: $f vaikuttaa tyhjältä tai erittäin pieneltä ($SIZE tavua)"
+              echo "⚠️  VAROITUS: $f vaikuttaa tyhjältä ($SIZE tavua)"
             else
               echo "✅ $f OK ($SIZE tavua)"
             fi
