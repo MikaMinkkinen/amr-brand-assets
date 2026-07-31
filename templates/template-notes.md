@@ -6,7 +6,14 @@
 
 ## Pohjan sijainti
 
-**SharePoint:** `https://almamedia.sharepoint.com/:p:/s/AMRDike/IQCqqFXhcbPiQrSob980415AASj879-riWGlgpzcKlueNyE?e=BP7fdJ` -kansion yhteydessä, tai pyydä linkki AMR-markkinoinnilta
+**SharePoint:** `AMRDike / Shared Documents / Tuote / ai-assets / templates / template.pptx`
+
+Hae pohja Microsoft 365 SharePoint -yhteydellä näin:
+```
+sharepoint_search(query="template AMR pohja", folderName="AMRDike", fileType="pptx")
+→ valitse tiedosto nimeltä "template.pptx"
+→ lue sisältö: read_resource(uri="file:///...")
+```
 
 Pohja päivittyy säännöllisesti — käytä aina SharePointin uusinta versiota, älä tallenna paikallista kopiota pitkäksi aikaa.
 
@@ -15,7 +22,7 @@ Pohja päivittyy säännöllisesti — käytä aina SharePointin uusinta versiot
 ## Pohjan tiedot (viimeksi tarkistettu 31.7.2026)
 
 - **Teema:** AMR UUSI
-- **Fonttikaava:** major: Archivo Extrabold, minor: Archivo
+- **Fonttikaava:** Raleway → major: Archivo Extrabold, minor: Archivo
 - **Värikaava:** Medium Red Violet (#9F248F), Persian Green (#28B78F), Olive Green (#C2C83D)
 - **Dian koko:** 33.87 × 19.05 cm (16:9 widescreen)
 - **Dioja:** 45 kpl (ohjeet + valmiit layoutit)
