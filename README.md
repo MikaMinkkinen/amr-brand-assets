@@ -66,7 +66,6 @@ amr-brand-assets/
 
 - **Archivo ei ole Office-safe-fontti** — LibreOffice QA-esikatselu voi näyttää tekstin eri leveänä kuin PowerPoint. Jätä tekstilaatikoihin ~10% ylimääräistä tilaa.
 - **Olive Green on tehosteväri** — ei sovellu suuriin taustapintoihin, vain aksentiksi ja kuvakkeisiin.
-- **Logot löytyvät myös SharePointista** — kansio: `_AMR Logot`
 - **ÄLÄ käytä Aptosta** — ei yhteensopiva vanhemmissa Office-versioissa.
 
 ---
