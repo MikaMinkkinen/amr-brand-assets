@@ -33,12 +33,9 @@ muualta äläkä lataa sitä internetistä.
 
 ### Vaihe 2: Valitse oikeat mallidiat sisällön perusteella
 
-| Sisältötyyppi                        | Käytä diaa           |
-|--------------------------------------|----------------------|
-| Esityksen aloitus                    | slide 1-3 (cover)    |
-| Osion vaihtuminen                    | slide 4–6 (section)  |
-| Sisältö                              | slide 7-9 (content)  |
-| Päätös / kiitos                      | slide 10-12 (closing)|
+Dia-jaottelu (mikä dia mihinkin sisältöön) ylläpidetään yhdessä paikassa:
+`templates/template-notes.md` → **Dia-jaottelu**. Katso numerot sieltä — älä
+kopioi niitä tähän.
 
 ### Vaihe 3: Muokkaa XML suoraan
 - Pura PPTX: `unzip template.pptx -d unpacked/`
