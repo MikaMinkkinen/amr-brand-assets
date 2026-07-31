@@ -3,6 +3,7 @@ name: Validate Brand Assets
 on:
   push:
     paths:
+      - '.github/workflows/**' 
       - 'colors/**'
       - 'fonts/**'
       - 'guidelines/**'
