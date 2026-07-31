@@ -34,9 +34,12 @@ commitoi muutos.
 Kun rakennat esitystä, toimi näin:
 
 1. Lue pohjan rakenne: `python /mnt/skills/public/pptx/scripts/thumbnail.py templates/template.pptx thumbs`
-2. Käytä dioja 11–45 sisältöpohjina — diat 1–10 ovat ohjesivuja
-3. Älä poista: logo-shape, footer-shape, sivunumero-placeholder
-4. Pakkaa takaisin ja validoi:
+2. Käytä dioja 1–3 kansilehtinä
+3. Käytä dioja 4-6 välisivuina
+4. Käytä dioja 7–9 sisältösivuina
+5. Käytä dioja 10–13 lopetussivuina
+4. Älä poista: logo-shape, footer-shape, sivunumero-placeholder
+5. Pakkaa takaisin ja validoi:
 ```bash
 cd unpacked && rm -f ../output.pptx && zip -Xr ../output.pptx .
 python /mnt/skills/public/pptx/scripts/office/validate.py output.pptx --original ../templates/template.pptx

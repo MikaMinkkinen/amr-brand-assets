@@ -33,17 +33,12 @@ muualta äläkä lataa sitä internetistä.
 
 ### Vaihe 2: Valitse oikeat mallidiat sisällön perusteella
 
-| Sisältötyyppi                        | Käytä diaa          |
-|--------------------------------------|---------------------|
-| Esityksen aloitus                    | slide1 (cover)      |
-| Osion vaihtuminen                    | slide14 (section)   |
-| 3 bulletia + argumentit              | ARGUMENTIT-layout   |
-| Teksti + 6 korttia                   | slide27             |
-| 3 saraketta + kuvakkeet              | slide24             |
-| Numeroidut vaiheet (prosessi)        | slide30             |
-| Otsikko + 3 bulletia + kuva oikealla | slide46 (uusi)      |
-| Taulukkodata (10–15 riviä, 3–6 sar.) | slide47 (uusi)      |
-| Päätös / kiitos                      | slide43 (closing)   |
+| Sisältötyyppi                        | Käytä diaa           |
+|--------------------------------------|----------------------|
+| Esityksen aloitus                    | slide 1-3 (cover)    |
+| Osion vaihtuminen                    | slide 4–6 (section)  |
+| Sisältö                              | slide 7-9 (content)  |
+| Päätös / kiitos                      | slide 10-12 (closing)|
 
 ### Vaihe 3: Muokkaa XML suoraan
 - Pura PPTX: `unzip template.pptx -d unpacked/`
@@ -87,7 +82,7 @@ Katso jokainen dia ennen toimittamista.
 
 ```
 logos/alma/          ← AMR:n omat logot
-logos/brands/        ← mediabrändit (iltalehti, kauppalehti jne.)
+logos/        ← mediabrändit (iltalehti, kauppalehti jne.)
   iltalehti/
   kauppalehti/
   talouselama/
