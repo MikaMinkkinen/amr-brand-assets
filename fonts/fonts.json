@@ -1,0 +1,67 @@
+{
+  "_comment": "AMR fonttimäärittelyt — poimittu suoraan ppt/theme/theme1.xml (fontScheme: Raleway). Pääfontti on Archivo.",
+  "_instructions_for_claude": "AMR käyttää Archivo-fonttia. Se EI kuulu Office-safe-listalle, joten LibreOffice-QA-esikatselussa leveysarvio voi olla epätarkka. Jätä tekstilaatikoihin ~10% slack. ÄLÄ käytä Aptosta.",
+
+  "headline": {
+    "family": "Archivo Extrabold",
+    "weight": "ExtraBold",
+    "transform": "UPPERCASE (VERSAALI) otsikoissa — poikkeus: pitkät otsikot tai väliotsikot gemenalla luettavuuden takia",
+    "sizes": {
+      "h1_presentation": 40,
+      "h2_presentation": 28,
+      "h3_presentation": 20,
+      "h1_pdf": 24,
+      "h2_pdf": 18,
+      "h3_pdf": 14
+    },
+    "fallback": "Calibri Bold"
+  },
+
+  "body": {
+    "family": "Archivo",
+    "weight": "Regular",
+    "sizes": {
+      "presentation": 14,
+      "pdf": 11
+    },
+    "line_height": {
+      "presentation": 1.3,
+      "pdf": 1.4
+    },
+    "fallback": "Calibri"
+  },
+
+  "thin": {
+    "family": "Archivo Thin",
+    "weight": "Thin",
+    "usage": "Decorative käyttö, suuri teksti, visuaaliset nostoelementit",
+    "fallback": "Calibri Light"
+  },
+
+  "caption": {
+    "family": "Archivo",
+    "weight": "Regular",
+    "sizes": {
+      "presentation": 11,
+      "pdf": 9
+    },
+    "color": "#666666"
+  },
+
+  "callout_number": {
+    "_comment": "Isot lukunostot esityksissä (esim. 85% tai 2,4M€)",
+    "family": "Archivo Extrabold",
+    "weight": "ExtraBold",
+    "size": 64,
+    "color": "#9F248F"
+  },
+
+  "google_fonts_url": "https://fonts.google.com/specimen/Archivo",
+
+  "qa_warning": "Archivo on QA-epäluotettava LibreOfficessa — renderöintileveys voi poiketa Officesta. Lisää ~10% slack tekstilaatikoihin ja älä luota QA-esikatselun tarkkaan tekstifittiin.",
+
+  "avoid": [
+    "Aptos — ei yhteensopiva vanhemmissa Office-versioissa",
+    "Calibri Light — substituutio vaihtelee ympäristöittäin"
+  ]
+}

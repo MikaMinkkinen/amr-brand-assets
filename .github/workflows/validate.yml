@@ -1,0 +1,65 @@
+name: Validate Brand Assets
+
+on:
+  push:
+    paths:
+      - 'colors/**'
+      - 'fonts/**'
+      - 'guidelines/**'
+      - 'logos/**'
+      - 'templates/**'
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check required files exist
+        run: |
+          MISSING=0
+          for f in \
+            "README.md" \
+            "colors/brand-colors.json" \
+            "fonts/fonts.json" \
+            "logos/logo-primary.png" \
+            "logos/logo-white.png" \
+            "guidelines/typography.md" \
+            "guidelines/layout.md" \
+            "guidelines/tone.md" \
+            "templates/template.pptx" \
+            "templates/template-notes.md"; do
+            if [ ! -f "$f" ]; then
+              echo "❌ Puuttuu: $f"
+              MISSING=1
+            else
+              echo "✅ Löytyy: $f"
+            fi
+          done
+          exit $MISSING
+
+      - name: Validate JSON files
+        run: |
+          python3 -m json.tool colors/brand-colors.json > /dev/null && echo "✅ brand-colors.json on validi JSON"
+          python3 -m json.tool fonts/fonts.json > /dev/null && echo "✅ fonts.json on validi JSON"
+
+      - name: Check for placeholder values
+        run: |
+          if grep -q "TÄYTÄ_TÄHÄN" colors/brand-colors.json; then
+            echo "❌ VIRHE: brand-colors.json sisältää täyttämättömiä arvoja"
+            exit 1
+          else
+            echo "✅ Ei täyttämättömiä arvoja"
+          fi
+
+      - name: Check logo file sizes
+        run: |
+          for f in logos/logo-primary.png logos/logo-white.png; do
+            SIZE=$(wc -c < "$f")
+            if [ "$SIZE" -lt 100 ]; then
+              echo "⚠️  VAROITUS: $f vaikuttaa tyhjältä tai erittäin pieneltä ($SIZE tavua)"
+            else
+              echo "✅ $f OK ($SIZE tavua)"
+            fi
+          done

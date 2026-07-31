@@ -1,0 +1,27 @@
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Tilapäiset Office-tiedostot (avoimena oleva tiedosto luo ~$-kopion)
+~$*.pptx
+~$*.docx
+~$*.xlsx
+
+# PowerPoint-pohjat (ylläpidetään SharePointissa, ei versionhallinnassa)
+*.pptx
+*.potx
+
+# Zip-paketit (generoidaan tarvittaessa, ei versionhallintaan)
+*.zip
+
+# Muut
+*.tmp
+*.log

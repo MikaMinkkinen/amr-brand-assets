@@ -1,0 +1,73 @@
+{
+  "_comment": "AMR brand colors — poimittu suoraan Presentation1-amr-updated_1.pptx teematiedostosta (ppt/theme/theme1.xml, clrScheme: AMR UUSI)",
+  "_instructions_for_claude": "Käytä näitä värejä aina kun rakennat AMR-brändin mukaisia dokumentteja. Älä korvaa näitä oletusväreillä.",
+
+  "amr": {
+    "medium_red_violet": "#9F248F",
+    "persian_green":     "#28B78F",
+    "olive_green":       "#C2C83D",
+
+    "primary":           "#9F248F",
+    "primary_dark":      "#9F248F",
+    "secondary":         "#28B78F",
+    "accent":            "#C2C83D",
+
+    "tints": {
+      "medium_red_violet_80": "#B24FA5",
+      "medium_red_violet_60": "#C579BB",
+      "medium_red_violet_40": "#D9A3D1",
+      "medium_red_violet_20": "#ECCDE8",
+      "persian_green_80":     "#53C5A5",
+      "persian_green_60":     "#7DD3BB",
+      "persian_green_40":     "#A6E2D1",
+      "persian_green_20":     "#D0F0E8",
+      "olive_green_20":       "#E7EAB3"
+    },
+
+    "neutral_dark":   "#000000",
+    "neutral_medium": "#666666",
+    "neutral_light":  "#F5F5F5",
+    "white":          "#FFFFFF",
+
+    "usage": {
+      "slide_background_dark":       "medium_red_violet (#9F248F)",
+      "slide_background_section":    "persian_green (#28B78F)",
+      "slide_background_light":      "white (#FFFFFF)",
+      "headline_on_dark":            "white (#FFFFFF)",
+      "headline_on_light":           "medium_red_violet (#9F248F)",
+      "body_text":                   "black (#000000)",
+      "accent_elements":             "olive_green (#C2C83D)",
+      "icons_primary":               "olive_green (#C2C83D)",
+      "muted_text_captions":         "neutral_medium (#666666)",
+      "hyperlinks":                  "olive_green (#C2C83D)"
+    },
+
+    "pantone_references": {
+      "medium_red_violet": "PMS 254C  — R159 G36 B143  — C43 M100 Y0 K0",
+      "persian_green":     "PMS 7473C — R40 G183 B143  — C73 M0 Y63 K0",
+      "olive_green":       "PMS 611C  — R194 G200 B61  — C28 M0 Y100 K5"
+    },
+
+    "do_not_use": [
+      "Olive green ei sovellu pohjaväriksi — käytä vain pienenä tehosteena",
+      "Medium red violet ja Persian green ovat tasavertaiset päävärit"
+    ]
+  },
+
+  "brands": {
+    "_instructions_for_claude": "Käytä brändin pääväriä kun rakennat kyseiselle medialle kohdennettua myyntimateriaalia. Yhdistä aina AMR-brändin värien kanssa — älä korvaa AMR-värejä kokonaan.",
+
+    "iltalehti":      { "primary": "#FF0000" },
+    "kauppalehti":    { "primary": "#00529C" },
+    "talouselama":    { "primary": "#ED1C24" },
+    "tivi":           { "primary": "#1A1A1A" },
+    "tekniikkatalous":{ "primary": "#0083C3" },
+    "arvopaperi":     { "primary": "#ED2B3B" },
+    "etuovi":         { "primary": "#94004A" },
+    "vuokraovi":      { "primary": "#94004A" },
+    "nettiauto":      { "primary": "#CC3300" },
+    "nettimoto":      { "primary": "#CC3300" },
+    "nettikone":      { "primary": "#DD6600" },
+    "nettivene":      { "primary": "#3366AA" }
+  }
+}
