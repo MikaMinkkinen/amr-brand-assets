@@ -1,6 +1,6 @@
 # AMR Layout-ohjeet
 
-> **Claudelle:** Lue tämä ennen kuin aloitat esityksen tai PDF:n rakentamisen.
+> **Claudelle:** Lue tämä ennen kuin aloitat esityksen rakentamisen.
 
 ---
 
@@ -62,11 +62,7 @@ AMR käyttää kahta pääväriä tasavertaisina. Sekä Medium Red Violet (#9F24
 ---
 
 ### Kuvakkeet
-- AMR käyttää Powerpointin omia kuvakkeita tai visuaalisesti vastaavia
-- Kuvakkeiden tyyli: ohuet viivat (outline/line style)
-- **Ensisijainen väri: Olive Green (#C2C83D)**
-- Muut hyväksytyt: Persian Green, Medium Red Violet, musta, valkoinen
-- Pohjan graafisia elementtejä (pisteet, muodot) voi käyttää luettelomerkeinä
+- Älä käytä kuvakkeita tai ikoneita
 
 ---
 
@@ -75,23 +71,3 @@ AMR käyttää kahta pääväriä tasavertaisina. Sekä Medium Red Violet (#9F24
 - ❌ Ei alleviivausta otsikon alla
 - ❌ Ei täyteen ahdettu diaa — jätä ilmaa
 - ❌ Olive Green ei pohjaväriksi
-
----
-
-## PDF-dokumentit
-
-### Sivuasetukset
-- **Koko:** A4 (21 × 29.7 cm)
-- **Marginaalit:** 2.5 cm kaikilla reunoilla
-- **Sisältöleveys:** 16.0 cm
-
-### Header ja footer
-- **Header:** Logo vasemmalla (max korkeus 1.2 cm) + dokumentin nimi oikealla (9pt, #666666)
-- Viiva alapuolella: 0.5pt, `#F5F5F5`
-- **Footer:** Sivunumero oikealla, päivämäärä vasemmalla (9pt, #666666)
-
-### Taulukot
-- Otsikkorivi: tausta `#9F248F`, teksti valkoinen
-- Parilliset rivit: `#F5F5F5`
-- Parittomat: valkoinen
-- Reunat: 0.5pt, `#F5F5F5`

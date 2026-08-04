@@ -22,10 +22,9 @@ commitoi muutos.
 ## Pohjan tiedot (viimeksi tarkistettu 31.7.2026)
 
 - **Teema:** AMR UUSI
-- **Fonttikaava:** Raleway → major: Archivo Extrabold, minor: Archivo
+- **Fonttikaava:** major: Archivo Extrabold, minor: Archivo
 - **Värikaava:** Medium Red Violet (#9F248F), Persian Green (#28B78F), Olive Green (#C2C83D)
 - **Dian koko:** 33.87 × 19.05 cm (16:9 widescreen)
-- **Dioja:** 45 kpl (ohjeet + valmiit layoutit)
 
 ---
 
