@@ -38,7 +38,8 @@ commitoi muutos.
 | Esityksen aloitus | diat 1–3 (cover)     |
 | Osion vaihtuminen | diat 4–6 (section)   |
 | Sisältö           | diat 7–9 (content)   |
-| Päätös / kiitos   | diat 10–13 (closing) |
+| Roadmap           | dia 10   (roadmap)   |
+| Päätös / kiitos   | diat 11–13 (closing) |
 
 ---
 
